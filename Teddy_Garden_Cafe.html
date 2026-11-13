@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teddy Garden Cafe | Ashok Nagar, Delhi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3EBDC;--bg2:#FBF7EE;--g:#2E6B50;--gd:#1E4636;--line:rgba(46,107,80,.25);--br:#8A5A3B;--brd:#4A2F1F;--tan:#D2B48C;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--gd);font:400 1rem/1.6 Jost,system-ui,sans-serif}
+h1,h2,h3{font-family:Cormorant Garamond,Georgia,serif;font-weight:400;color:var(--g);margin:0;line-height:1.1}
+a{color:var(--g)}
+:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(243,235,220,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 5vw}
+.brand{font:600 1.25rem Cormorant Garamond,serif;color:var(--g);text-decoration:none;white-space:nowrap}
+nav .links{display:flex;gap:1.4rem;overflow-x:auto;scrollbar-width:none}
+nav .links a{text-decoration:none;font-weight:500;white-space:nowrap;font-size:.95rem}
+nav .links a:hover{text-decoration:underline;text-underline-offset:5px}
+section{padding:5.5rem 5vw}
+.wrap{max-width:1100px;margin:0 auto}
+.head{margin-bottom:2.4rem;max-width:34rem}
+.head h2{font-size:clamp(2rem,4.5vw,3.2rem)}
+.head p{margin:.7rem 0 0}
+.btn{display:inline-block;border:1.5px solid var(--g);background:var(--g);color:var(--bg2);padding:.8rem 1.6rem;border-radius:999px;font:600 .95rem Jost,sans-serif;text-decoration:none;cursor:pointer}
+.btn.o{background:transparent;color:var(--g)}
+.btn:hover{background:var(--gd);border-color:var(--gd);color:var(--bg2)}
+#home{position:relative;min-height:calc(100svh - 70px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--bg2);background:var(--gd);overflow:hidden}
+.herobg{position:absolute;inset:0;background:linear-gradient(135deg,#2E6B50,#1E4636) center/cover no-repeat}
+#home::after{content:"";position:absolute;inset:0;background:rgba(18,45,34,.35)}
+.hero{position:relative;z-index:1}
+.hero h1{color:var(--bg2);font-size:clamp(3rem,10vw,7.5rem);letter-spacing:-.02em}
+.hero p{font-size:1.2rem;max-width:32rem;margin:1.4rem auto 2rem}
+.hero .btns{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
+#home .btn{background:var(--bg2);color:var(--g);border-color:var(--bg2)}
+#home .btn.o{background:transparent;color:var(--bg2)}
+#home .btn:hover{background:var(--bg);color:var(--gd)}
+.dk{background:var(--g);color:var(--bg2)}
+.dk h2,.dk a,.dk .rv p,.dk .rv p::before,.dk .rv b{color:var(--bg2)}
+.dk .rv{background:rgba(251,247,238,.08);border-color:rgba(251,247,238,.35)}
+.dk .ph{border-color:var(--bg2)}
+.list{columns:2;column-gap:4rem}
+.row{display:flex;align-items:baseline;gap:.6rem;padding:.75rem 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.row b{font:500 1.12rem Cormorant Garamond,serif;color:var(--g)}
+.row i{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-.25rem)}
+.row span{font-weight:600;flex:none}
+.more{margin-top:2.4rem}
+#kitchen,#visit{background:var(--bg2)}
+.belt{overflow:hidden;margin:0 -5vw;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track{display:flex;width:max-content;animation:slide 70s linear infinite}
+.belt:hover .track,.belt:focus-within .track{animation-play-state:paused}
+.belt.rev .track{animation-direction:reverse;animation-duration:55s}
+@keyframes slide{to{transform:translateX(-50%)}}
+.rv{width:min(22rem,78vw);margin-right:1.2rem;padding:1.6rem;border:1.5px solid var(--line);border-radius:1.2rem;background:var(--bg);display:flex;flex-direction:column;justify-content:space-between;gap:1.2rem;white-space:normal}
+.rv p{margin:0;font:400 1.08rem/1.5 Cormorant Garamond,serif}
+.rv p::before{content:"\201C";display:block;font-size:2.6rem;line-height:.6;color:var(--g);margin-bottom:.4rem}
+.rv b{font-weight:600;color:var(--g);font-size:.92rem}
+.ph{width:min(17rem,62vw);height:21rem;margin-right:1.2rem;border-radius:1.2rem;overflow:hidden;border:1.5px solid var(--g);padding:.4rem;flex:none}
+.ph img{width:100%;height:100%;object-fit:cover;border-radius:.9rem;display:block}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.card{border:1.5px solid var(--line);border-radius:1.2rem;padding:1.8rem;background:var(--bg);display:flex;flex-direction:column;gap:.6rem;align-items:flex-start}
+.card h3{font-size:1.5rem}
+.card p{margin:0}
+.card .btn{margin-top:auto}
+footer{padding:2.5rem 5vw calc(2.5rem + env(safe-area-inset-bottom,0px));text-align:center;border-top:1px solid var(--line)}
+footer a{font:600 1.1rem Cormorant Garamond,serif}
+footer p{margin:.4rem 0 0;font-size:.9rem}
+dialog{width:min(46rem,94vw);max-height:88vh;border:1.5px solid var(--g);border-radius:1.4rem;background:var(--bg2);color:var(--gd);padding:0;overflow:hidden}
+dialog[open]{display:flex;flex-direction:column;height:min(40rem,88dvh)}
+body:has(dialog[open]){overflow:hidden}
+dialog::backdrop{background:rgba(30,70,54,.45)}
+.mh{flex:none;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.5rem .6rem}
+.mh h2{font-size:1.8rem}
+.x{border:1.5px solid var(--g);background:none;color:var(--g);border-radius:999px;padding:.4rem 1rem;font:600 .9rem Jost,sans-serif;cursor:pointer}
+.tabs{flex:none;display:flex;gap:.5rem;overflow-x:auto;padding:.4rem 1.5rem 1rem;scrollbar-width:thin}
+.tabs button{flex:none;border:1.5px solid var(--line);background:none;color:var(--g);border-radius:999px;padding:.4rem .95rem;font:500 .9rem Jost,sans-serif;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--g);color:var(--bg2);border-color:var(--g)}
+#ml{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 1.5rem 1.5rem}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.arch{max-width:22rem;margin:0 auto;width:100%}.list{columns:1}.info{grid-template-columns:1fr}section{padding:4rem 6vw}nav{flex-direction:column;align-items:flex-start;gap:.4rem}nav .links{width:100%}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}.belt{overflow-x:auto;-webkit-mask-image:none;mask-image:none}html{scroll-behavior:auto}}
+
+body{letter-spacing:.005em}
+h1,h2,h3{font-weight:600}
+.head h2{font-size:clamp(2.4rem,5vw,3.8rem)}
+.eb{display:block;font:500 .8rem Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--br);margin-bottom:.8rem}
+.eb::after{content:"";display:block;width:2.6rem;height:2px;background:var(--br);margin-top:.8rem}
+.dk .eb{color:var(--tan)}.dk .eb::after{background:var(--tan)}
+.brand{font-size:1.6rem}
+.row b{font-size:1.4rem;font-weight:600}
+.row span{color:var(--br);font-size:1.05rem}
+.row{transition:padding .25s,background .25s}
+.row:hover{padding-left:.7rem;background:rgba(138,90,59,.08)}
+.rv p{font-size:1.3rem}
+.dk .rv p::before,.dk .rv b{color:var(--tan)}
+.card{border-top:3px solid var(--br)}
+.ph img{transition:transform .6s}.ph:hover img{transform:scale(1.07)}
+.btn{transition:transform .2s,background .25s,color .25s}
+.btn:hover,.btn.o:hover{background:var(--br);border-color:var(--br);color:var(--bg2);transform:translateY(-2px)}
+#home .btn:hover,#home .btn.o:hover{background:var(--tan);border-color:var(--tan);color:var(--brd)}
+#home::after{background:linear-gradient(180deg,rgba(18,45,34,.35),rgba(74,47,31,.55))}
+#cafe.dk,footer.dk{background:var(--brd)}
+#cafe .ph{border-color:var(--tan)}
+footer.dk a{color:var(--tan)}
+.tabs button{transition:background .2s,border-color .2s}
+.tabs button:hover{border-color:var(--br)}
+.tabs button[aria-selected=true]{background:var(--br);border-color:var(--br)}
+.logo{display:block;width:clamp(8rem,20vw,11rem);aspect-ratio:1;border-radius:50%;border:3px solid var(--tan);box-shadow:0 0 0 8px rgba(210,180,140,.25),0 22px 40px -12px rgba(0,0,0,.5);margin:0 auto 1.6rem;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+nav{transition:box-shadow .3s}nav.sc{box-shadow:0 8px 24px -14px rgba(74,47,31,.55)}
+nav .links a.on{color:var(--br);text-decoration:underline;text-underline-offset:5px}
+.rvl{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rvl.in{opacity:1;transform:none}
+.row.rvl{transition:opacity .8s,transform .8s,padding .25s,background .25s}
+.rv,.card{transition:transform .35s,box-shadow .35s}
+.card.rvl{transition:opacity .8s,transform .8s,box-shadow .35s}
+.rv:hover,.card.in:hover,.card:hover{transform:translateY(-6px);box-shadow:0 18px 34px -18px rgba(74,47,31,.45)}
+@media(prefers-reduced-motion:reduce){.logo{animation:none}.rvl{opacity:1;transform:none;transition:none}}
+
+#reviews{background:var(--bg2)}
+#kitchen.dk,footer.dk{background:var(--brd)}
+#visit.dk{background:var(--g)}
+#kitchen .ph{border-color:var(--tan)}
+.dk .card{color:var(--gd)}
+.strip{overflow:hidden;padding:1.15rem 0;white-space:nowrap}
+.strip.a{background:var(--brd);color:var(--tan)}
+.strip.b{background:var(--g);color:var(--bg2)}
+.strip .track{animation-duration:60s;align-items:center}
+.strip.b .track{animation-direction:reverse}
+.strip span{font:italic 500 clamp(1.6rem,3.2vw,2.4rem) 'Cormorant Garamond',Georgia,serif;margin-right:1.6rem}
+.strip i{font-style:normal;font-size:.9rem;margin-right:1.6rem;opacity:.7}
+.why ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem}
+.why li{border-top:1px solid rgba(210,180,140,.55);padding-top:1.2rem}
+.why em{font:italic 500 1.3rem 'Cormorant Garamond',serif;color:var(--tan)}
+.why h3{font-size:1.7rem;color:var(--bg2);margin:.4rem 0 .6rem}
+.why p{margin:0;opacity:.92}
+.stack{display:grid;gap:4.5rem}
+.fig{display:grid;grid-template-columns:minmax(0,26rem) 1fr;gap:3rem;align-items:center}
+.fig:nth-child(even){grid-template-columns:1fr minmax(0,26rem)}
+.fig:nth-child(even) .im{order:2}
+.fig .im{padding:.5rem;border:1.5px solid var(--br);border-radius:1.4rem}
+.fig img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:1rem;display:block}
+.fig em{font:italic 500 1.4rem 'Cormorant Garamond',serif;color:var(--br)}
+.fig h3{font-size:clamp(2rem,4vw,3rem);margin:.3rem 0 .6rem}
+.fig p{margin:0;font-size:1.1rem;max-width:26rem}
+@media(max-width:900px){.why ul{grid-template-columns:1fr 1fr}.fig,.fig:nth-child(even){grid-template-columns:1fr;gap:1.4rem}.fig:nth-child(even) .im{order:0}}
+@media(max-width:520px){.why ul{grid-template-columns:1fr}}
+.slot{aspect-ratio:4/5;border-radius:1rem;border:1.5px dashed var(--br);display:grid;place-items:center;color:var(--br);font:italic 500 1.5rem 'Cormorant Garamond',Georgia,serif;background:repeating-linear-gradient(135deg,rgba(138,90,59,.09) 0 14px,rgba(138,90,59,.16) 14px 28px)}
+.slot.food{aspect-ratio:auto;width:100%;height:100%;border-color:var(--tan);color:var(--tan);text-align:center;padding:1rem;box-sizing:border-box;font-size:1.25rem;background:repeating-linear-gradient(135deg,rgba(210,180,140,.08) 0 14px,rgba(210,180,140,.16) 14px 28px)}
+</style></head><body>
+<nav><a class="brand" href="#home">Teddy Garden Cafe</a><div class="links"><a href="#best">Best sellers</a><a href="#reviews">Reviews</a><a href="#kitchen">Food</a><a href="#cafe">Inside the cafe</a><a href="#visit">Visit</a></div></nav>
+
+<section id="home"><div class="herobg" id="heroBg" role="img" aria-label="Teddy Garden Cafe"></div><div class="wrap hero"><img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCADhAOEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5xoooryzhCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKbQA6im0baoB1FNo+apKHUUbX9Kb81ADqKKKACiiigk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723/AHj2sQ54ntPwB8TS3E3i7VbbVpbH4ReDrRrOxtpIYts7ou+S6d9u/ey7pm/2px/drnP2bvhqvjz4r3nxt8Saba6dYSX1xf6LpgjVFeXzPmlRP7kW5V3f89P935uS+HnxU+Gtl+yVqvwz8Zy61ZTSX7XD22kQfvdUjaUS+V5m3bFu2+W27b8v3a5rQv2jfFuhfFn/AITC00jTjp/2D+yIPDu9ktbSxXbtiib+8u1fm/i+b5fuqpzR90OY9P8AhLe+Ivi7+3dffE2283+wNKe5to7kOwi8jynigt/9pm3ecy/Vq82+MVxrPxW/a11/SYtQAtNPuJbBJbl/9F020t93nyv/AHUXbNIzf8B/urXQfAf4zWGn/tB6fL4nl0/wz4Vj0y50zTbG1j8mw01pHil3/wC83l7Wlb5tzfN8v3eO+JuueG9Ev/Evh3wXrUOuy67qc+oazrlsn7ueJpzLHZQN/Ei8PI38Um3+FaPsh9k98j8Y+Evhr+w3Jf8AhjwnFcaVqF99hgh1glP7Z8371xPt/vqrfuv7qrH92vNvhj4xsLL4paX8cfjZrk0ZuXa00G2itd6RxLE6tOsar+6tItzRrt+9IzN/CzNyvhv416VF8I7D4e/EHwDF4v0rRrv7fpP+nSW3ly/PtSfarebH+8k/4D8u1q858W+K9X8aeK7rxDrcsP2qTbHHFapsgtIl+WOKJf4Y1X7q/wDxVEpkc59TeAPFl18QdP8Ai9afDobLp7RbTw/Y+eIZQlzPO1zeszbdskksnmyN/DtjX+Fa8c8bW/gz4UJH8OtKsdP8UarFLG/ifU5SyRyCJ1l/s6DZ8yRhlXzGXazMqr/DtXym1vLvT7yK70+7msruP/Vy2sjIyf8AAlqCo5g5z3KD9ouyv9C/4R3xj8FPAmq6LH/qLGwgbT/sn+637z/x3bXkPiTVdP1rxJLqGleHbTQdP+WODTLaSR1jVf8AaZtzN/easuip5iOYKKKKm4rhRRRSAKKKKACiiigAooooAKKKKACiiigAr1D4cyW/gv4c6/8AFwwxXGs2d5Fonh6KVN6wXk0Tu106/wB5Ilby/wDary+ux8AfErxB8N9UmutItNK1CKSSOSSx1e1+0webG26KXbuVlkj3NtZW/iargOB678TRdfCv9k3Rvhve3Uv/AAlXi28/t7XUlP7xF3hiJW/56FxCu7+LypK+ca3/ABp408RfELxpdeKfE139ov7jbH+7TZEir92JV/hVf/im/irApSlzhMKKKKkQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=" alt="Teddy Garden logo"><h1>Teddy Garden Cafe</h1><p>Coffee, matcha, pizza and pancakes in a cozy, teddy-filled garden corner of Ashok Nagar, Delhi.</p>
+<div class="btns"><button class="btn" data-menu>View full menu</button><a class="btn o" href="#visit">Find us</a></div></div></section>
+
+<div class="strip a" aria-hidden="true"><div class="track" id="sa"></div></div>
+<section id="best"><div class="wrap"><div class="head"><span class="eb">Our favourites</span><h2>Best sellers</h2><p>The dishes and drinks guests order most.</p></div>
+<div class="list" id="bs"></div>
+<div class="more"><button class="btn o" data-menu>View full menu</button></div></div></section>
+
+<section id="why" class="why dk"><div class="wrap"><div class="head"><span class="eb">Four reasons to stay</span><h2>Why guests stay</h2></div><ul>
+<li><em>N° I</em><h3>Teddies everywhere</h3><p>Giant teddy bears, soft lighting and garden corners made for photos.</p></li>
+<li><em>N° II</em><h3>Coffee, frappes and matcha</h3><p>Creamy frappes, iced lattes, a full espresso bar and a whole matcha menu.</p></li>
+<li><em>N° III</em><h3>Plenty to choose from</h3><p>Pasta, pizza, momos, wraps, burgers, waffles and pancakes on one menu.</p></li>
+<li><em>N° IV</em><h3>Open till midnight</h3><p>Open every day, from 12 PM to 12 AM.</p></li>
+</ul></div></section>
+<section id="reviews"><div class="wrap"><div class="head"><span class="eb">Loved by guests</span><h2>What guests say</h2><p>Rated 4.5 on Google.</p></div></div>
+<div class="belt" tabindex="0" aria-label="Guest reviews"><div class="track" id="rt"></div></div></section>
+
+<section id="kitchen" class="dk"><div class="wrap"><div class="head"><span class="eb">Straight from the kitchen</span><h2>From our kitchen</h2></div></div>
+<div class="belt" aria-label="Food photos"><div class="track" id="gt"></div></div></section>
+
+<div class="strip b" aria-hidden="true"><div class="track" id="sb"></div></div>
+<section id="cafe"><div class="wrap"><div class="head"><span class="eb">Take a look</span><h2>Inside the cafe</h2></div><div class="stack" id="cs"></div></div></section>
+
+<section id="visit" class="dk"><div class="wrap"><div class="head"><span class="eb">Come say hi</span><h2>Visit us</h2></div>
+<div class="info">
+<div class="card"><h3>Hours</h3><p>Monday to Sunday<br>12:00 PM to 12:00 AM</p></div>
+<div class="card"><h3>Location</h3><p>Sub Post Office, Block 16, Ashok Nagar, Delhi 110018</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Teddy+Garden+Cafe+Block+16+Sub+Post+Office+Ashok+Nagar+Delhi+110018" target="_blank" rel="noopener">Open in Google Maps</a></div>
+<div class="card"><h3>Contact</h3><p>+91 93100 10714</p><a class="btn" href="tel:+919310010714">Call now</a></div>
+</div></div></section>
+
+<footer class="dk"><a href="https://www.instagram.com/teddygarden._" target="_blank" rel="noopener">@teddygarden._ on Instagram</a><p>Teddy Garden Cafe, Ashok Nagar, Delhi</p></footer>
+
+<dialog id="dlg"><div class="mh"><h2>Full menu</h2><button class="x" id="cl">Close</button></div><div class="tabs" id="tb" role="tablist"></div><div id="ml"></div></dialog>
+
+<script>
+const IMGS=[
+  "", "", "", "",                 // unused (cafe interior photos go in INT below)
+  "images/momos-panfried.jpg",   // FOOD 1: pan-fried momos
+  "images/lollipops.jpg",   // FOOD 2: chicken lollipops
+  "images/pizza.jpg",   // FOOD 3: veggie pizza
+  "images/wrap.jpg",   // FOOD 4: grilled wrap
+  "images/momos.jpg",   // FOOD 5: steamed momos
+  "images/crispy-corn.webp"    // FOOD 6: crispy corn
+];
+const ALT=["Teddy Garden Cafe storefront","Teddy bear beside a wavy mirror","Dining room with hanging plants and a giant teddy","Coffee counter under the green ceiling","Pan-fried momos","Chicken lollipops on slaw","Veggie pizza","Grilled wrap with red cabbage","Steamed momos in a bamboo basket","Crispy corn"];
+const M=`Italian Pastas|Signature Martino Pasta:349|Spicy Arrabbiata Pasta:319|Creamy Cheesy Pasta:339|Classic Basil Pesto Pasta:379
+Gen-Z Matcha|Honey Matcha:309|Strawberry Matcha:339|Mango Matcha Cloud:339|Iced Matcha Latte:279|Vanilla Matcha:339
+Oriental Dry Snacks & Shawarma|Paneer Shawarma Regular:139|Chicken Shawarma Kurkure Crunchy:309|Chicken Shawarma Regular:139|Kurkure Cigar Roll:379|Chilly Potato:309|Honey Chilly Potato:339|Paneer Shawarma Kurkure Crunchy:309|Cigar Roll:319
+Wraps|Creamy Mushroom Wrap:229|Crunchy Chicken Wrap:229|Falafel Wrap:179|Aloo Patty Wrap:129|Peri Peri Chicken Wrap:229|Tandoori Paneer Wrap:209
+Wok Bowls & Noodles|Singapore Noodles:269|Chilly Garlic Noodles:269|Hakka Noodles:259|Chicken Noodles:309
+Coffee On The Rocks|Sunrise Orange Coffee:249|Hazelnut Iced Latte:249|Caramel Iced Latte:249|Vietnamese Iced Coffee:309|Ice Latte:219|Tiramisu Iced Latte:309|Irish Froth Latte:309
+Gourmet Thick Shakes|Oreo Shake:259|Lotus Biscoff Shake:319|Nutella Shake:319|Chocolate Shake:229|Bubble Gum Shake:319|Kit Kat Shake:259|Blueberry Shake:319|Strawberry Shake:259|Mango Cheese Shake:259|Classic Vanilla Shake:249|Tiramisu Shake:259
+Grilled Sandwiches|Makhni Paneer Sandwich:279|Cheese Corn Sandwich:259|Peri Peri Paneer Sandwich:309|Butter Chicken Sandwich:309|Peri Peri Chicken Sandwich:309
+Nacho Corner|Chicken Cheese Baked Nachos:219|Veggie Nachos With Salsa Dip:189
+Fruit Coolers & Mojitos|Green Apple Fizz:229|Mango Iced Tea:249|Virgin Mint Mojito:229|Ocean Blue Mojito:229|Spicy Mango Mojito:229|Cranberry Mojito:229|Peach Iced Tea:219|Passion Fruit:249|Blueberry Iced Tea:249|Lemon Iced Tea:219|Melon Breeze Mojito:229|Strawberry Iced Tea:249
+Belgian Waffles|Blueberry Waffles:209|Triple Chocolate Waffles:209|Classic Waffles:179|Nutella Waffles:189|Snow White Waffles:179
+Garlic Bread Delight|Basil Pesto Garlic Bread:149|Classic Garlic Bread:129|Mushroom Garlic Bread:129|Cheese Corn Garlic Bread:129
+Garden Fresh Momos|Chicken Pan Fry Momos:309|Veg Momos:209|Chicken Momos:259|Mutton Momos:279|Paneer Pan Fry Momos:279|Paneer Momos:229|Veg Pan Fry Momos:259
+Fluffy Mini Pancakes|Triple Chocolate Pancake:189|Nutella Pancake:149|Snow White Pancake:149|Classic Pancake:149
+Oriental Gravies & Starters|Crispy Corn:269|Chilly Mushroom:339|Chilly Chicken:429|Drums Of Heaven:259|Creamy Chicken Lollipop:229|Chilly Paneer:379
+Crispy Thin Crust Pizzas|Makhni Paneer Pizza:429|Cheese Corn Pizza:349|Brotolana Pizza:389|Margherita Pizza:309|BBQ Chicken Pizza:439|Peri Peri Chicken Pizza:439|Butter Chicken Pizza:439|Basil Chicken Pizza:519
+Fresh Brew Frappe|Vanilla Chill Frappe:249|Tiramisu Frappe:309|Choco Chip Frappe:259|Nutella Frappe:309|Classic Cold Coffee:219|Irish Frappe:249|Mocha Frappe:249|Hazelnut Frappe:259|Caramel Frappe:249|Lotus Biscoff Frappe:309
+Espresso Bar (Hot Coffee)|Hazelnut Latte:279|Americano:169|Cafe Latte:189|French Vanilla Latte:229|Caffe Mocha:229|Flat White:179|Caramel Latte:279|Affogato Latte:229|Classic Espresso:129|Cappuccino:209|Caramel Mocha:279
+Fries Festa|Chicken Cheese Fries:279|Peri Peri Fries:229|Peri Peri Cheese Fries:259|Classic Salted Fries:209
+Handcrafted Burgers|Peri Peri Chicken Burger:189|Crunchy Chicken Burger:189|Aloo Patty Burger:129|Tandoori Paneer Burger:189`.split("\n").map(l=>{const p=l.split("|");return[p[0],p.slice(1).map(x=>{const i=x.lastIndexOf(":");return[x.slice(0,i),x.slice(i+1)]})]});
+const BEST=[["Signature Martino Pasta",349],["Honey Matcha",309],["Chicken Pan Fry Momos",309],["Margherita Pizza",309],["Peri Peri Chicken Burger",189],["Lotus Biscoff Shake",319],["Nutella Frappe",309],["Nutella Waffles",189],["Classic Pancake",149]];
+const REV=[["Sonal Kataria","Everything is great. Had a great time with friends, the staff was good and it exceeded my expectations."],["Sidharth Singh","Amazing food, authentic taste and the staff is very nice."],["Gunisha Makol","The cafe is best for a couple or family outing. The ambience is so cute, and the quantity and quality they serve make it my go-to place."],["Urvinderkaur Gujral","A wonderful experience! The ambience is beautiful and cozy, perfect for quality time with friends or family. Friendly staff too."],["Ritika","Very good service and delicious food, and I enjoyed the ambience too."],["Jasleen","Such a cute experience! The whole place has a cozy, adorable vibe with teddy bears everywhere."],["Mannat Gandhi","I really enjoyed it. The atmosphere was very comfortable, the service was good and the ambience was aesthetic."],["Diksha Kapoor","Very cozy and cute place. Food is very nice. Must recommend!"],["Navya Bhitalwal","Nice place to relax and spend some quality time. Definitely worth a visit!"],["Chef Ankur Sodhi","The quality of food is very good for the price, especially the chicken burger. Worthy."],["Priya Dedha","Best cafe ever. Pancakes are a must try, the taste is so delicious."],["Ishmeet Kaur","An amazing place. The staff is cooperative and humble, and the food quality was good too."],["Sanjeev Rana","Great place to spend time with loved ones. Delicious food, awesome drinks, super ambience and cleanliness, and sweet staff."]];
+const $=s=>document.querySelector(s);
+const row=(n,p)=>`<div class="row"><b>${n}</b><i></i><span>₹${p}</span></div>`;
+$("#bs").innerHTML=BEST.map(b=>row(b[0],b[1])).join("");
+const twice=h=>h+h;
+$("#rt").innerHTML=twice(REV.map(r=>`<figure class="rv" style="margin-block:0"><p>${r[1]}</p><b>${r[0]}</b></figure>`).join(""));
+const ph=(a,n)=>a.map(i=>`<div class="ph">${IMGS[i]?`<img src="${IMGS[i]}" alt="${ALT[i]}" loading="lazy">`:`<div class="slot food" role="img" aria-label="Photo placeholder: ${ALT[i]}"><span>${ALT[i]}</span></div>`}</div>`).join("").repeat(n);
+$("#gt").innerHTML=ph([4,5,6,7,8,9],4);
+const strip=(id,w,n)=>$(id).innerHTML=w.map(x=>`<span>${x}</span><i>✦</i>`).join("").repeat(n);
+strip("#sa",["Coffee &amp; frappes","Matcha","Pizza","Pasta","Momos","Shakes","Waffles","Pancakes","Open till midnight"],4);
+strip("#sb",["Cozy corners","Giant teddies","Soft lighting","Garden vibes","Good company"],6);
+const INT=["images/enterance.webp","images/MIRROR.webp","images/teddy-interior.webp","images/counter.jpg"]; /* paste your 4 interior photo URLs or data URIs here, in order */
+const FIG=[[0,"The front door","Step in under the Teddy Garden sign."],[1,"The mirror corner","A teddy keeping watch over a favourite photo spot."],[2,"The dining room","Hanging plants, warm lights and a giant teddy overhead."],[3,"The coffee counter","Where every brew is made, under the green ceiling."]];
+$("#cs").innerHTML=FIG.map((f,i)=>`<figure class="fig" style="margin:0"><div class="im">${INT[i]?`<img src="${INT[i]}" alt="${f[1]}" loading="lazy">`:`<div class="slot" role="img" aria-label="Photo placeholder: ${f[1]}"><span>Photo ${i+1}</span></div>`}</div><figcaption><em>N° ${["I","II","III","IV"][i]}</em><h3>${f[1]}</h3><p>${f[2]}</p></figcaption></figure>`).join("");
+const d=$("#dlg"),tb=$("#tb"),ml=$("#ml");
+function show(i){[...tb.children].forEach((b,j)=>b.setAttribute("aria-selected",j==i));ml.innerHTML=M[i][1].map(x=>row(x[0],x[1])).join("");ml.scrollTop=0}
+tb.innerHTML=M.map((c,i)=>`<button role="tab" data-i="${i}">${c[0]}</button>`).join("");
+tb.onclick=e=>{const b=e.target.closest("button");if(b)show(+b.dataset.i)};
+document.querySelectorAll("[data-menu]").forEach(b=>b.onclick=()=>{d.showModal();show(0)});
+$("#cl").onclick=()=>d.close();
+d.onclick=e=>{if(e.target===d)d.close()};
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".head,#bs .row,.card,.more,.why li,.fig").forEach((el,i)=>{el.classList.add("rvl");el.style.transitionDelay=(i%6)*70+"ms";io.observe(el)});
+const nv=$("nav");addEventListener("scroll",()=>nv.classList.toggle("sc",scrollY>10),{passive:true});
+const lk=[...document.querySelectorAll("nav .links a")];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)lk.forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+["best","reviews","kitchen","cafe","visit"].forEach(id=>so.observe(document.getElementById(id)));
+</script></body></html>
